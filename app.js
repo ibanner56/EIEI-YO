@@ -140,7 +140,7 @@ app.get('/account', ensureAuthenticated, function(req, res){
   res.render('account', { user: req.user });
 });
 
-app.get('/getQuote', function(req, res){res.render('getQuote')})
+//app.get('/getQuote', function(req, res){res.render('getQuote')});
 
 app.get('/login',
   passport.authenticate('azuread-openidconnect', { failureRedirect: '/login' }),
